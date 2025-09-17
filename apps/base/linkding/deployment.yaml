@@ -12,12 +12,12 @@ spec:
       labels:
         app: linkding
     spec:
+      securityContext:
+        runAsNonRoot: true
       volumes:
         - name: linkding-data
           persistentVolumeClaim:
             claimName: linkding-data-pvc
-          hostpath:
-            path: /data/linkding
       containers:
         - name: linkding
           image: sissbruecker/linkding:1.31.0
@@ -26,4 +26,3 @@ spec:
           volumeMounts:
             - name: linkding-data
               mountPath: /etc/linkding/data
-
