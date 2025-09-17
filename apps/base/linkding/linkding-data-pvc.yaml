@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: linkding-data-pvc
+  namespace: linkding 
+spec:
+  storageClassName: "" 
+  volumeName: linkding-data-pvc
+  resources:
+    requests:
+      storage: 1Gi
