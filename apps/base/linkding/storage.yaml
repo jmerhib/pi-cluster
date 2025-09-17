@@ -5,6 +5,8 @@ metadata:
   namespace: linkding 
 spec:
   storageClassName: "" 
+  accessModes:
+    - ReadWriteOnce
   volumeName: linkding-data-pvc
   resources:
     requests:
