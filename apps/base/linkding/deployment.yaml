@@ -25,7 +25,7 @@ spec:
           image: sissbruecker/linkding:1.31.0
           envFrom:
             - secretRef:
-                name: linkding_creds
+                name: linkding-creds
           ports:
             - containerPort: 9090
           volumeMounts:
