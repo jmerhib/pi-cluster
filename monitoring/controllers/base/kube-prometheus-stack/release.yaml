@@ -30,9 +30,10 @@ spec:
       adminPassword: wersdf234WERSDF@#$
       ingress:
         enabled: True
+        ingressClassName: traefik
         hosts:
           - grafana.justinshomelab.local
         tls:
           - secretName: grafana-general-tls
             hosts:
-            - grafana-internal.justinshomelab.dev
+            - grafana.justinshomelab.local

@@ -5,6 +5,7 @@ data:
 kind: Secret
 metadata:
     name: grafana-general-tls
+    namespace: monitoring
 type: kubernetes.io/tls
 sops:
     age:
