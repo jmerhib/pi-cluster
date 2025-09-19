@@ -28,3 +28,11 @@ spec:
   values:
     grafana:
       adminPassword: wersdf234WERSDF@#$
+      ingress:
+        enabled: True
+        hosts:
+          - grafana.justinshomelab.local
+        tls:
+          - secretName: grafana-general-tls
+            hosts:
+            - grafana-internal.justinshomelab.dev
