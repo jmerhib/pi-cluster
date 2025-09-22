@@ -58,15 +58,13 @@ spec:
               name: homepage-config
               subPath: widgets.yaml
             - mountPath: /app/logs
-              name: homepage-logs
-              subPath: logs
+              name: logs
       volumes:
         - name: homepage-config
           persistentVolumeClaim:
             claimName: homepage-pvc
-        - name: homepage-logs
-          persistentVolumeClaim:
-            claimName: homepage-logs-pvc
+        - name: logs
+          emptyDir: {}
       securityContext:
         fsGroup: 1000
         runAsUser: 1000
