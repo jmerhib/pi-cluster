@@ -57,10 +57,18 @@ spec:
             - mountPath: /app/config/widgets.yaml
               name: homepage-config
               subPath: widgets.yaml
-            - mountPath: /app/config/logs
-              name: homepage-config
+            - mountPath: /app/logs
+              name: homepage-logs
               subPath: logs
       volumes:
         - name: homepage-config
           persistentVolumeClaim:
             claimName: homepage-pvc
+        - name: homepage-logs
+          persistentVolumeClaim:
+            claimName: homepage-logs-pvc
+      securityContext:
+        fsGroup: 1000
+        runAsUser: 1000
+        runasGroup: 1000
+      restartPolicy: Always

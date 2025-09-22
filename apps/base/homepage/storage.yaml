@@ -7,7 +7,7 @@ metadata:
 spec:
   storageClassName: ""
   capacity:
-    storage: 1Gi
+    storage: 2Gi
   accessModes:
     - ReadWriteOnce
   local:
@@ -26,6 +26,21 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: homepage-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: ""
+  selector:
+    matchLabels:
+      app: "homepage"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: homepage-logs-pvc
 spec:
   accessModes:
     - ReadWriteOnce
