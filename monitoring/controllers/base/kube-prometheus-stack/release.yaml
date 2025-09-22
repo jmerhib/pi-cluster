@@ -41,8 +41,10 @@ spec:
         enabled: True
         ingressClassName: traefik
         hosts:
-          - grafana.justinshomelab.local
-        tls:
-          - secretName: grafana-general-tls
-            hosts:
-              - grafana.justinshomelab.local
+          - grafana.justinshomelab.dev
+        annotations:
+          traefik.ingress.kubernetes.io/router.entrypoints: web
+        # tls:
+        #   - secretName: grafana-general-tls-public
+        #     hosts:
+        #       - grafana.justinshomelab.dev
