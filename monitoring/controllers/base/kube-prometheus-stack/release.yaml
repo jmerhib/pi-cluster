@@ -27,7 +27,15 @@ spec:
           kind: PrometheusRule
   values:
     grafana:
-      adminPassword: wersdf234WERSDF@#$
+      grafana.ini:
+        auth.anonymous:
+          enabled: True
+          org_role: Viewer
+        auth:
+          disable_login_form: false
+      admin:
+        existingSecret: grafana-creds
+        passwordKey: adminPassword
       ingress:
         enabled: True
         ingressClassName: traefik
@@ -36,4 +44,4 @@ spec:
         tls:
           - secretName: grafana-general-tls
             hosts:
-            - grafana.justinshomelab.local
+              - grafana.justinshomelab.local
