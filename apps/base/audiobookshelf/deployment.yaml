@@ -41,4 +41,5 @@ spec:
       securityContext:
         runAsUser: 1000
         runasGroup: 1000
+        fsGroup: 1000
 status: {}
