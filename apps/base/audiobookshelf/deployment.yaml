@@ -36,8 +36,8 @@ spec:
               mountPath: /metadata
           # ports:
           #   - containerPort: 80
-          # securityContext:
-          #   allowPrivilegeEscalation: false
+          securityContext:
+            allowPrivilegeEscalation: false
       securityContext:
         fsGroup: 1000
         runAsUser: 1000
