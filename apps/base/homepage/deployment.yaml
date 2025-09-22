@@ -61,8 +61,6 @@ spec:
               name: logs
       volumes:
         - name: homepage-config
-          configMap:
-            name: homepage
           persistentVolumeClaim:
             claimName: homepage-pvc
         - name: logs
