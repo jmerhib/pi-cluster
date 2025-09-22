@@ -5,6 +5,10 @@ metadata:
   labels:
     app.kubernetes.io/name: homepage
 data:
+  proxmox.yaml: |
+    - Proxmox:
+        href: https://proxmox.justinshomelab.dev:8006
+        description: Proxmox Cluster
   kubernetes.yaml: |
     mode: cluster
   settings.yaml: ""
