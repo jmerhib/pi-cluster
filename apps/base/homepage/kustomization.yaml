@@ -9,4 +9,3 @@ resources:
   - clusterrole.yaml
   - secrets.yaml
   - serviceaccount.yaml
-  - storage.yaml
