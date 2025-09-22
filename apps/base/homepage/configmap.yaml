@@ -25,12 +25,12 @@ data:
               href: https://github.com/jmerhib/pi-cluster
   services.yaml: |
     - My First Group:
-        - Grafana
+      - Grafana:
             href: http://grafana.justinshomelab.dev/
             description: Grafana Monitoring
 
     - My Second Group:
-        - Audiobookshelf
+      - Audiobookshelf:
             href: http://audio.justinshomelab.dev/
             description: Audiobook/Podcasts
 
