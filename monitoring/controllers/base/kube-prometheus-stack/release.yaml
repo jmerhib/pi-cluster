@@ -35,7 +35,8 @@ spec:
           disable_login_form: false
       admin:
         existingSecret: grafana-creds
-        passwordKey: adminPassword
+        userKey: admin-user
+        passwordKey: admin-password
       ingress:
         enabled: True
         ingressClassName: traefik
