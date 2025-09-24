@@ -21,6 +21,8 @@ spec:
           volumeMounts:
             - name: pi-vol
               mountPath: "/etc/pihole"
+            - name: pi-dns
+              mountPath: "/etc/dnsmasq.d"
           ports:
             - name: dns-tcp
               containerPort: 53
@@ -29,25 +31,32 @@ spec:
               containerPort: 53
               protocol: UDP
             - name: http
-              containerPort: 80
+              containerPort: 8080
               protocol: TCP
             - name: https
-              containerPort: 443
+              containerPort: 8443
               protocol: TCP
           env:
             - name: TZ
               value: "America/New_York"
             - name: FTLCONF_dns_listeningMode
               value: "all"
-            - name: hostnetwork
-              value: "True"
-            - name: webserver-creds
-              valueFrom: webserver-creds
-              key: FTLCONF_webserver_api_password
+            - name: FTLCONF_webserver_port
+              value: "8080"
+            - name: FTLCONF_webserver_https_port
+              value: "8443"
+            - name: FTLCONF_webserver_api_password
+              valueFrom:
+                secretKeyRef:
+                  name: webserver-creds
+                  key: FTLCONF_webserver_api_password
           resources: {}
       volumes:
         - name: pi-vol
           persistentVolumeClaim:
-            claimName: pihole-pvc
+            claimName: pihole-config-pvc
+        - name: pi-dns
+          persistentVolumeClaim:
+            claimName: pihole-dns-pvc
       restartPolicy: Always
 status: {}
