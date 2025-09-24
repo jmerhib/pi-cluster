@@ -34,6 +34,7 @@ data:
           version: 6
           key: "0pP3CAJZKtAU0mTFYOSiKTLLul3jhXVEaPLfCTiOfhQ="
           fields: ["queries", "blocked", "blocked_percent", "gravity"]
+
     - My First Group:
       - Grafana:
             href: http://grafana.justinshomelab.dev/
