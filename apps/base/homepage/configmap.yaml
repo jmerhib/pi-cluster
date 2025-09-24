@@ -24,7 +24,7 @@ data:
             - abbr: GH
               href: https://github.com/jmerhib/pi-cluster
   services.yaml: |
-    -Services:
+    - Services:
       - Pi-hole:
         icon: pi-hole
         href: http://192.168.2.28:8080/admin
