@@ -26,14 +26,15 @@ data:
   services.yaml: |
     - Services:
       - Pi-hole:
-        icon: pi-hole
-        href: http://192.168.2.28:8080/admin
-        widget:
-          type: pihole
-          url: http://192.168.2.28:8080
-          version: 6
-          key: "0pP3CAJZKtAU0mTFYOSiKTLLul3jhXVEaPLfCTiOfhQ="
-          fields: ["queries", "blocked", "blocked_percent", "gravity"]
+          icon: pi-hole
+          href: http://192.168.2.28:8080/admin
+          description: DNS sinkhole
+          widget:
+            type: pihole
+            url: http://192.168.2.28:8080
+            version: 6
+            key: "0pP3CAJZKtAU0mTFYOSiKTLLul3jhXVEaPLfCTiOfhQ="
+            fields: ["queries", "blocked", "blocked_percent", "gravity"]
 
     - My First Group:
       - Grafana:
