@@ -39,7 +39,7 @@ data:
     - Monitoring:
       - Grafana:
          icon: grafana
-         href: http://grafana.justinshomelab.dev/grafana
+         href: https://grafana.justinshomelab.dev/grafana
          description: Grafana Monitoring
          widget:
            type: grafana
@@ -48,11 +48,11 @@ data:
     - Personal:
       - Audiobookshelf:
          icon: audiobookshelf
-         href: http://audio.justinshomelab.dev/
+         href: https://audio.justinshomelab.dev
          description: Audiobooks/Podcasts
          widget:
            type: audiobookshelf
-           url: audio.justinshomelab.dev
+           url: https://audio.justinshomelab.dev
            key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlJZCI6IjZjMjg5NDMwLTEwNWMtNDk1NC04Y2FiLTQ5ZDBjZWEzMDkyMiIsIm5hbWUiOiJndWVzdC1hcGkiLCJ0eXBlIjoiYXBpIiwiaWF0IjoxNzU4ODAzOTUyfQ.aap-7ddmKhVqkNv6XcxsML2_d_y5X-2gvPWKgHwmm54
 
   widgets.yaml: |
