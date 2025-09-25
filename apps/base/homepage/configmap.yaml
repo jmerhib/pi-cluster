@@ -45,15 +45,15 @@ data:
            type: grafana
            url: https://grafana.justinshomelab.dev
 
-    - Personal
+    - Personal:
       - Audiobookshelf:
-          icon: audiobookshelf
-          href: http://audio.justinshomelab.dev/
-          description: Audiobooks/Podcasts
-          widget:
-            type: audiobookshelf
-            url: audio.justinshomelab.dev
-            key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlJZCI6IjZjMjg5NDMwLTEwNWMtNDk1NC04Y2FiLTQ5ZDBjZWEzMDkyMiIsIm5hbWUiOiJndWVzdC1hcGkiLCJ0eXBlIjoiYXBpIiwiaWF0IjoxNzU4ODAzOTUyfQ.aap-7ddmKhVqkNv6XcxsML2_d_y5X-2gvPWKgHwmm54
+         icon: audiobookshelf
+         href: http://audio.justinshomelab.dev/
+         description: Audiobooks/Podcasts
+         widget:
+           type: audiobookshelf
+           url: audio.justinshomelab.dev
+           key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlJZCI6IjZjMjg5NDMwLTEwNWMtNDk1NC04Y2FiLTQ5ZDBjZWEzMDkyMiIsIm5hbWUiOiJndWVzdC1hcGkiLCJ0eXBlIjoiYXBpIiwiaWF0IjoxNzU4ODAzOTUyfQ.aap-7ddmKhVqkNv6XcxsML2_d_y5X-2gvPWKgHwmm54
 
   widgets.yaml: |
     - kubernetes:
