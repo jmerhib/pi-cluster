@@ -44,6 +44,7 @@ data:
          widget:
            type: grafana
            url: https://grafana.justinshomelab.dev
+           apiKey: glsa_anhuBS3Xbrwf4DkBWI1FCqiItEqHX4yO_a00e351e
 
     - Personal:
       - Audiobookshelf:
