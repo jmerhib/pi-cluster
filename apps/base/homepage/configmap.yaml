@@ -43,7 +43,7 @@ data:
          description: Grafana Monitoring
          widget:
            type: iframe
-           url: http://grafana.justinshomelab.dev:3000/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?orgId=1&refresh=10s&viewPanel=7&theme=dark
+           url: http://grafana.justinshomelab.dev/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?orgId=1&refresh=10s&viewPanel=7&theme=dark
            aspectRatio: 16/9
 
     - Personal:
