@@ -43,8 +43,7 @@ data:
          description: Grafana Monitoring
          widget:
            type: grafana
-           url: https://grafana.justinshomelab.dev
-           apiKey: glsa_anhuBS3Xbrwf4DkBWI1FCqiItEqHX4yO_a00e351e
+           url: https://grafana.justinshomelab.dev/d-solo/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?orgId=1&panelId=7
 
     - Personal:
       - Audiobookshelf:
