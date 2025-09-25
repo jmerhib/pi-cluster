@@ -36,20 +36,25 @@ data:
             key: "0pP3CAJZKtAU0mTFYOSiKTLLul3jhXVEaPLfCTiOfhQ="
             fields: ["queries", "blocked", "blocked_percent", "gravity"]
 
-    - My First Group:
+    - Monitoring:
       - Grafana:
-            href: http://grafana.justinshomelab.dev/
-            description: Grafana Monitoring
+         icon: grafana
+         href: http://grafana.justinshomelab.dev/grafana
+         description: Grafana Monitoring
+         widget:
+           type: grafana
+           url: https://grafana.justinshomelab.dev
 
-    - My Second Group:
+    - Personal
       - Audiobookshelf:
-            href: http://audio.justinshomelab.dev/
-            description: Audiobook/Podcasts
+          icon: audiobookshelf
+          href: http://audio.justinshomelab.dev/
+          description: Audiobooks/Podcasts
+          widget:
+            type: audiobookshelf
+            url: audio.justinshomelab.dev
+            key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlJZCI6IjZjMjg5NDMwLTEwNWMtNDk1NC04Y2FiLTQ5ZDBjZWEzMDkyMiIsIm5hbWUiOiJndWVzdC1hcGkiLCJ0eXBlIjoiYXBpIiwiaWF0IjoxNzU4ODAzOTUyfQ.aap-7ddmKhVqkNv6XcxsML2_d_y5X-2gvPWKgHwmm54
 
-    - My Third Group:
-        - My Third Service:
-            href: http://localhost/
-            description: Homepage is 😎
   widgets.yaml: |
     - kubernetes:
         cluster:
