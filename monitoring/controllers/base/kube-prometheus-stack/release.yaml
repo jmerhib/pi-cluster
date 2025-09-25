@@ -33,6 +33,8 @@ spec:
           org_role: Viewer
         auth:
           disable_login_form: false
+        security:
+          allow_embedding: true
       admin:
         existingSecret: grafana-creds
         userKey: admin-user
