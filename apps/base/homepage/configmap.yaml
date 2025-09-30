@@ -41,7 +41,10 @@ data:
          icon: grafana
          href: https://grafana.justinshomelab.dev/grafana
          description: Grafana Monitoring
-
+         widget:
+           type: grafana
+           version: 2
+           url: https://grafana.justinshomelab.dev/d/vkQ0UHxik/coredns?orgId=1&from=now-3h&to=now&timezone=utc&var-datasource=prometheus&var-cluster=$__all&var-job=$__all&var-instance=$__all&refresh=10s
     - Personal:
       - Audiobookshelf:
          icon: audiobookshelf
