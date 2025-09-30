@@ -41,11 +41,6 @@ data:
          icon: grafana
          href: https://grafana.justinshomelab.dev/
          description: Grafana Monitoring
-         widget:
-           type: grafana
-           url: https://grafana.justinshomelab.dev/
-           path: ""
-           embed: false
 
     - Personal:
       - Audiobookshelf:
