@@ -7,7 +7,7 @@ spec:
   interval: 30m
   chart:
     spec:
-      chart: openebs
+      chart: openebs-localpv
       version: "4.3.3"
       sourceRef:
         kind: HelmRepository
@@ -23,6 +23,8 @@ spec:
   values:
     engines:
       local:
+        hostpath:
+          enabled: true
         lvm:
           enabled: false
         zfs:
@@ -30,10 +32,8 @@ spec:
       replicated:
         mayastore:
           enabled: false
-    loki:
-      localpvScConfig:
-        loki:
-          basePath: "/var/mnt/local-volume"
-          reclaimPolicy: Retain
-
-
+    minio:
+      enabled: false
+    localpv-provisioner:
+      basePath: "/var/mnt/local-volume"
+      reclaimPolicy: Retain
