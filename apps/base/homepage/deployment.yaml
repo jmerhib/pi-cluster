@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: homepage
-  namespace: default
   labels:
     app.kubernetes.io/name: homepage
 spec:
@@ -72,5 +71,5 @@ spec:
       securityContext:
         fsGroup: 1000
         runAsUser: 1000
-        runasGroup: 1000
+        runAsGroup: 1000
       restartPolicy: Always
