@@ -27,11 +27,11 @@ data:
     - Services:
       - Pi-hole:
           icon: pi-hole
-          href: http://192.168.2.31:8080/admin
+          href: http://192.168.2.31:32676/admin
           description: DNS sinkhole
           widget:
             type: pihole
-            url: http://192.168.2.31:8080
+            url: http://192.168.2.31:32676
             version: 6
             key: "rkvf42JXAsWlBtJoC56YtKQksYs9VcQtSD6M7rU9Rbk="
             fields: ["queries", "blocked", "blocked_percent", "gravity"]
