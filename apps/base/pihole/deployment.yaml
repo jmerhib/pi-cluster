@@ -23,7 +23,6 @@ spec:
                   - key: storage
                     operator: In
                     values: ["node01"]
-      hostNetwork: true
       containers:
         - image: pihole/pihole:2025.08.0
           name: pihole
