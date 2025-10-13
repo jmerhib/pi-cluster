@@ -15,6 +15,14 @@ spec:
       labels:
         app: audiobookshelf
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: storage
+                    operator: In
+                    values: ["node01"]
       volumes:
         - name: audiobooks
           persistentVolumeClaim:
@@ -41,6 +49,6 @@ spec:
       securityContext:
         fsGroup: 1000
         runAsUser: 1000
-        runasGroup: 1000
+        runAsGroup: 1000
       restartPolicy: Always
 status: {}
