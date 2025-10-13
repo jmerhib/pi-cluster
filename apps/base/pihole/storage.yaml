@@ -9,10 +9,6 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  storageClassName: ""
-  selector:
-    matchLabels:
-      app: "pihole"
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -24,7 +20,3 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  storageClassName: ""
-  selector:
-    matchLabels:
-      app: "pihole"
