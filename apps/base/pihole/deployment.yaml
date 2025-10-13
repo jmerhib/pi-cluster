@@ -23,6 +23,7 @@ spec:
                   - key: storage
                     operator: In
                     values: ["node01"]
+      hostNetwork: true
       containers:
         - image: pihole/pihole:2025.08.0
           name: pihole
@@ -51,8 +52,8 @@ spec:
               value: "all"
             - name: FTLCONF_webserver_port
               value: "8080"
-            - name: FTLCONF_webserver_https_port
-              value: "8443"
+            # - name: FTLCONF_webserver_https_port
+            #   value: "8443"
             - name: FTLCONF_webserver_api_password
               valueFrom:
                 secretKeyRef:

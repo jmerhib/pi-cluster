@@ -27,13 +27,13 @@ data:
     - Services:
       - Pi-hole:
           icon: pi-hole
-          href: http://192.168.2.29:8080/admin
+          href: http://192.168.2.31:8080/admin
           description: DNS sinkhole
           widget:
             type: pihole
-            url: http://192.168.2.29:8080
+            url: http://192.168.2.31:8080
             version: 6
-            key: "VuzYq33jbEo2aZztPItkMmtusArfUquGeuhuFLTER+Q="
+            key: "rkvf42JXAsWlBtJoC56YtKQksYs9VcQtSD6M7rU9Rbk="
             fields: ["queries", "blocked", "blocked_percent", "gravity"]
 
     - Monitoring:
@@ -50,7 +50,7 @@ data:
          widget:
            type: audiobookshelf
            url: https://audio.justinshomelab.dev
-           key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlJZCI6ImUwMzZiODc4LWJlNjQtNGExMS04ZjJmLTc2MzcwOGZiNDYyNSIsIm5hbWUiOiJndWVzdCIsInR5cGUiOiJhcGkiLCJpYXQiOjE3NTk4Njg4NTF9.9adjma5-qV6-IRNBNWmgigctc7QxJbul0F2oA_Gvtos
+           key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlJZCI6IjBjMmM5ZGU2LTRmZDMtNDllMC1hMGM5LTQ2MmZmMzNkMGIzZSIsIm5hbWUiOiJndWVzdCIsInR5cGUiOiJhcGkiLCJpYXQiOjE3NjAzNjY4MDR9.yWLu6jnkqW8IRkoH36qruoZroph_LxbC67ErKAFkF84
 
   widgets.yaml: |
     - kubernetes:
