@@ -4,3 +4,4 @@ resources:
   - renovate
   - openebs
   - metallb
+  - metrics
