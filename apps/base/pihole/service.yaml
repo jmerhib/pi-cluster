@@ -2,6 +2,8 @@ kind: Service
 apiVersion: v1
 metadata:
   name: pihole
+  annotations:
+    metallb.io/loadBalancerIPs: 192.168.2.192
 spec:
   type: LoadBalancer
   ports:
