@@ -27,7 +27,7 @@ data:
     - Services:
       - Pi-hole:
           icon: pi-hole
-          href: http://192.168.2.31:8080/admin
+          href: http://192.168.2.192:8080/admin
           description: DNS sinkhole
           widget:
             type: pihole
