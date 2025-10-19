@@ -6,6 +6,8 @@ metadata:
     metallb.io/loadBalancerIPs: 192.168.2.192
 spec:
   type: LoadBalancer
+  externalTrafficPolicy: Local
+  allocateLoadBalancerNodePorts: false
   ports:
     - name: dns-udp
       port: 53
